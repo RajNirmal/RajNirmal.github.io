@@ -3,11 +3,17 @@
 	height: 100vh;
 	width: 100%
 }
+.navbar-back{
+	background-color: #ffffff;
+}
 .bg-1{
 	background-color: #03A9F4;
 }
 .bg-2{
 	background-color: #D32F2F;
+}
+.bg-3{
+	background-color: #d3582f;
 }
 .accent{
 	background-color: #F44336;
@@ -19,8 +25,11 @@
 	color: #757575;
 }
 .text-color-accent{
-	color:  #03A9F4;
+	color:  #90caf9;
 
+}
+.text-size{
+	font-size: 24px;
 }
 .inline{
 	display: inline;
@@ -35,6 +44,23 @@
 	padding-top: 70px;
 	padding-bottom: 70px;
 }
+.all-padding{
+	padding-left: 40vh;
+	padding-right: 20vh;
+}
 .more-padding{
 	padding-top: 40vh;
+}
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+
+.navbar-nav li a:hover {
+    color: #1abc9c !important;
 }

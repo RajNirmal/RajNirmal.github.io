@@ -10,20 +10,130 @@
   	<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div class="container-fluid bg-1 center text-white">
+ <nav class="navbar navbar-fixed-top navbar-back">
+  <div class="container">
+    <div class="navbar-header ">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Nirmalraj</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#1">WHO</a></li>
+        <li><a href="#2">WHAT</a></li>
+        <li><a href="#3">INTERESTS</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+	<div class="container-fluid bg-1 center text-white" id="1">
 		<h1>Who am I</h1>
 		<img src="images/1.png" alt="Android Logo" height = 400 width = 400 class = "img-circle">
 		<h3>I am an aspiring Android / Web app developer who goes by the name of <p class= "text-black inline"> Nirmalraj</p></h3>
 	</div>
-	<div class="container-fluid bg-2 center more-padding text-white">
+	<div class="container-fluid bg-2 center more-padding text-white" id="2">
   		<h1>What do I do?</h1>
   		<h3>I am currently pursuing my Engineering degree in the field of Computer Science in an institution whose name I better not mention. </h3><br><br>
-  		<h1 class="text-color-accent" >Student is my profession Coding is my Passion</h1>
-  		<h3>When I am burdened with work from school I spend my time coding some random stuff believing that one day it will all come to fruition in some form.</h3>
+  		<h1 class="text-color-accent" >Learning is my profession Coding is my Passion</h1>
+  		<h3>When I am not burdened with work from school I spend my time coding some random stuff believing that one day it will all come to fruition in some form.</h3>
 	</div>
-	<div class="container-fluid accent center text-white more-padding">
+	<div class="container-fluid center bg-3 text-white more-padding" id ="3">
   		<h3>Where do my Interests lie?</h3>
-  		<p>Lorem ipsum..</p>
+  		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
+    <li data-target="#myCarousel" data-slide-to="5"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <div class="col-sm-4">
+      		<img src="images/and.png" alt="Image" class="img-responsive " >
+    	</div>
+    	<h1>Android</h1><br>
+    	<p class = "text-size text-color-accent all-padding"> Android phones provide a wide array of opportunities for developers like me. I started working with android 2 years and the path has been filled with potholes and speedbumps. Somehow I have mamanged to survive this scare and still going strong.</p>
+    </div>
+	<div class="item">
+    	<div class="col-sm-4">
+      		<img src="images/12.png" alt="Image" class="img-responsive " >
+    	</div>
+    	<h1>Java</h1><br>
+    	<p class = "text-size text-color-accent all-padding"> I started learning Java 3 years ago. Though I have not gone deep into it I am very good with the basics which has helped me travel far in Android world. </p>
+    </div>
+    <div class="item">
+      <div class="col-sm-4">
+      		<img src="images/html.jpg" class="img-responsive " alt="Image">
+    	</div>
+    	<h1>Web</h1><br>
+    	<p class = "text-size text-color-accent all-padding"> Html and CSS are my first love. I started developing websites 7 years ago. I was very interested in them in the beginning and they were the stepping stones to my coding life. Unfortunately when I stepped on them to cross the river they sank forever. I have not used HTML/CSS for the past 3 years..That is until now. My love for this language has born again and I can't wait to do some wonderful stuff with it.</p>
+    </div>
+
+    <div class="item">
+    	<div class="col-sm-4">
+      		<img src="images/c.jpg" alt="Image" class="img-responsive " >
+    	</div>
+    	<h1>C/C++</h1><br>
+    	<p class = "text-size text-color-accent all-padding"> Like many other programmers in this world I too had to learn C/C++. I think they are very powerful and versatile languages and I love coding in them. But they are a thing of the past now and many developers and companies are moving on to the next thing but I am confident that when the time comes my C knowledge will serve me well.</p>
+    </div>
+
+    <div class="item">
+        <div class="col-sm-4">
+      		<img src="images/node.png" class="img-responsive " alt="Image">	
+    	</div>
+    	<h1>node.js</h1><br>
+    	<p class = "text-size text-color-accent all-padding"> I had a go at PHP and found it interesting, then my friend suggested node.js. As soon I started coding in it I started liking it. Though I am no expert in this language I am currently using it to setup all my servers. </p>
+    </div>
+
+    <div class="item">
+    	<div class="col-sm-4">
+      		<img src="images/py.png" alt="Image" class="img-responsive " >
+    	</div>
+    	<h1>Python</h1><br>
+    	<p class = "text-size text-color-accent all-padding"> Python is everywhere. You may not have noticed it before but it is there. It is a very powerful language which drew me in with its simple syntax and ease of use. I am pretty sure I will be sticking with Python for quite a while.</p>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+  	<!--	 <div class="row inline">
+    		<div class="col-sm-4">
+      			<p>Lorem ipsum..</p>
+      			<img src="images/and.png" alt="Image" class="img-responsive img-circle inline" >
+    		</div>
+    		<div class="col-sm-4">
+      			<p>Lorem ipsum..</p>
+      			<img src="images/html.jpg" class="img-responsive img-circle inline"alt="Image">
+    		</div>
+    		<div class="col-sm-4">
+      			<p>Lorem ipsum..</p>
+			    <img src="images/node.png" class="img-responsive img-circle inline" alt="Image">	
+    		</div>
+    		<div class="col-sm-4">
+      			<p>Lorem ipsum..</p>
+      			<img src="images/c.jpg" alt="Image" class="img-responsive img-circle inline" >
+    		</div>
+    		<div class="col-sm-4">
+      			<p>Lorem ipsum..</p>
+      			<img src="images/py.png" alt="Image" class="img-responsive img-circle inline" >
+    		</div>
+  		</div>-->
 	</div>
 </body>
 </html>
